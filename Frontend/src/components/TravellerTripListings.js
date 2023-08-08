@@ -56,14 +56,13 @@ class TravellerTripListings extends Component {
             return Object.keys(allTrips).map((i) => {
                     return <div className="brdr bgc-fff pad-10 box-shad btm-mrg-20 myborder1 property-listing" key={allTrips[i].ID}>
                     <div className="media">
-                        <a className="pull-left" href="#" target="_parent">
-                        <img alt="Thumbnail View of Property" className="img-responsive" src={`http://localhost:3001/uploads/${allTrips[0].image1}`} /></a>
+                        <img alt="Thumbnail View of Property" className="img-responsive" src={`http://localhost:3001/uploads/${allTrips[0].image1}`} />
                         <div className="media-body">  
                             <h4 className="myh4">{allTrips[i].headline}</h4>
                             <h6 className="myh6">{allTrips[i].description}</h6>
   
                             <ul className="list-inline">
-                                <li className = "list-inline-item"><img alt="Pindrop Sign" style={{height: "35px"}} src={require('./pindrop.png')}/></li>
+                                <li className = "list-inline-item"><img alt="Pindrop Sign" className="pin-drop" src={require('./pindrop.png')}/></li>
                                 <li className = "list-inline-item">{allTrips[i].streetAddress}</li>
                                 <li className = "list-inline-item">{allTrips[i].city}</li>
                                 <li className = "list-inline-item">{allTrips[i].state}</li>
@@ -105,11 +104,11 @@ class TravellerTripListings extends Component {
     <div>
       {redirectVar}
       <Navbar inverse collapseOnSelect>
-          <Navbar.Header>
-            <Navbar.Brand>
-            <a href="/" title = "HomeAway" className = "logo"><img alt="Homeaway Logo" src={require('./LOGO2.png')} className="navbar-logo"/></a>
-            </Navbar.Brand>
-          </Navbar.Header>
+      <Navbar.Header style={{height:"8vw"}}>
+                    <Navbar.Brand>
+                        <a href="/" title = "SEREP"><img src={require('./LOGO2.png')} style={{height:"6vw"}} alt="Homeaway Logo"/></a>
+                    </Navbar.Brand> 
+                </Navbar.Header>
         <div>
            <div className="btn btn-group">
              <button className="dropdown-toggle"  style = {{backgroundColor:"transparent", background:"transparent", borderColor:"transparent"}} type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Hello {cookie.load('cookie3')}</button>
@@ -122,7 +121,7 @@ class TravellerTripListings extends Component {
            <img src={require('./logo.png')} alt="Homeaway Logo"/>
         </div>
       </Navbar>
-            <div className = "container-full">
+            {/* <div className = "container-full">
                 <div className="container-pad">
                     <div className="form-row myformrow">
                         <div className="form-group col-sm-9" id = "property-listings" style ={{maxWidth : "900px"}}>
@@ -130,7 +129,10 @@ class TravellerTripListings extends Component {
                         </div>
                     </div>
                 </div>
-          </div>
+          </div> */}
+          <div className='owner-property'>
+                        { this.renderTrips()  }
+                    </div>
         </div>
         )
     }

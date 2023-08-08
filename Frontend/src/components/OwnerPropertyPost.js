@@ -295,11 +295,11 @@ render(){
     <div>
       {redirectVar}
       <Navbar inverse collapseOnSelect>
-          <Navbar.Header>
-            <Navbar.Brand>
-              <a href="#" title = "HomeAway" className = "logo"><img alt="Homeaway Logo" src={require('./LOGO2.png')} className="navbar-logo"/></a>
-            </Navbar.Brand>
-          </Navbar.Header>
+      <Navbar.Header style={{height:"8vw"}}>
+                        <Navbar.Brand>
+                            <a href="/" title = "SEREP"><img src={require('./LOGO2.png')} style={{height:"6vw"}} alt="Homeaway Logo"/></a>
+                        </Navbar.Brand> 
+                    </Navbar.Header>
         <div>
            <div className="btn btn-group">
              <button className="dropdown-toggle"  style = {{backgroundColor:"transparent", background:"transparent", borderColor:"transparent"}} type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Hello {this.state.name}</button>
@@ -540,7 +540,7 @@ render(){
                                        <input type="baseRate" onChange = {this.baseRateChangeHandler} value = {this.state.baseRate} className="form-control" id="currency" placeholder="Enter value"/>
                                        </div>
                                        <div className="form-group">
-                                       <h2>Nightly Base Rate</h2>
+                                       <h2>Nightly Base Rate Currency</h2>
                                        <hr/>
                                        <select id="currency" name="currency"  onChange = {this.currencyChangeHandler} value={this.state.currency} className="select form-control">
                                               <option disabled hidden defaultValue>Currency</option>

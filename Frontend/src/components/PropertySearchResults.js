@@ -76,8 +76,8 @@ class PropertySearchResults extends Component {
             return Object.keys(searchData).map((i) => {
                     return <div className="brdr bgc-white pad-10 box-shad btm-mrg-20 property-listing" key={searchData[i].ID}>
                     <div className="media">
-                        <a className="pull-left" href="#" target="_parent">
-                        <img alt="Thumbnail View of Property" className="img-responsive" src={`http://localhost:3001/uploads/${searchData[i].image1}`} /></a>
+                        {/* <a className="pull-left" href="#" target="_parent"> */}
+                        <img alt="Thumbnail View of Property" className="img-responsive" src={`http://localhost:3001/uploads/${searchData[i].image1}`} />
                         <div className="clearfix visible-sm"> </div>
                         <div className="media-body fnt-smaller">
                                 <input id = "heading" value = {searchData[i].headline} type="text" readOnly="readOnly" />
@@ -92,7 +92,7 @@ class PropertySearchResults extends Component {
                                     <li className = "list-inline-item"> Sleeps  {searchData[i].sleeps}</li>
                                 </ul>
                                 <br></br><br></br>
-                                <input style ={{background: "rgb(216, 245, 157)", width: "595px"}} id = "heading" value = {searchData[i].currency + ' ' + searchData[i].baseRate} type="text" readOnly="readOnly" />
+                                <input style ={{background: "rgb(216, 245, 157)", width: "100%"}} id = "heading" value = {searchData[i].currency + ' ' + searchData[i].baseRate} type="text" readOnly="readOnly" />
 
                                 <Link className="view" to={`/property/${searchData[i].uid}/${this.state.location}/${this.state.fromdate}/${this.state.todate}/${this.state.noOfGuests}`} target="_blank">Dummy Link</Link>
                         </div>
@@ -261,13 +261,13 @@ class PropertySearchResults extends Component {
               <style>{'body { background-color: white; }'}</style>
             </Helmet>
                 <Navbar>
-                <Navbar.Header>
+                <Navbar.Header style={{height:"8vw"}}>
                     <Navbar.Brand>
-                    <a href="/" title = "HomeAway" className = "logo"><img src={require('./LOGO2.png')} className="navbar-logo" alt="Homeaway Logo"/></a>
-                    </Navbar.Brand>
+                        <a href="/" title = "SEREP"><img src={require('./LOGO2.png')} style={{height:"6vw"}} alt="Homeaway Logo"/></a>
+                    </Navbar.Brand> 
                 </Navbar.Header>
                 <div>
-                    <img alt="US Flag" src={require('./us_flag.png')}/>
+                    <img alt="US Flag" style={{height:"2vw"}} src={require('./us_flag.png')}/>
                     <button id="blue" className="btn" style = {{fontColor : "black", backgroundColor:"white", background:"white", borderColor:"white"}} type="button"><a href="#">Trip Boards</a></button>
                     {!this.state.isTravelerLoggedIn 
                     ?
@@ -344,7 +344,8 @@ class PropertySearchResults extends Component {
                             </div>
                             <div className = "form-group col-sm-5" style = {{marginLeft: "20px", width : "800px"}}>
                                 <div className = "card-body border">
-                                    <Map
+                                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=charusat&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com">embed-googlemap.com</a></div></div>
+                                    {/* <Map
                                         id="myMap"
                                         options={{
                                         center: { lat: lattitude, lng:  longitude },
@@ -357,7 +358,7 @@ class PropertySearchResults extends Component {
                                             title: locationTitle
                                         });
                                         }}
-                                    />
+                                    /> */}
                                 </div>
                             </div>
                         </div>

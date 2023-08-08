@@ -164,11 +164,11 @@ class Profile extends Component{
             <div>
                 {redirectVar}
                 <Navbar inverse collapseOnSelect>
-                    <Navbar.Header>
-                        <Navbar.Brand>
-                            <a href="/" title = "HomeAway" className = "logo"><img src={require('./LOGO2.png')} className="navbar-logo" alt="Homeaway Logo"/></a>
-                        </Navbar.Brand> 
-                    </Navbar.Header>
+                <Navbar.Header style={{height:"8vw"}}>
+                    <Navbar.Brand>
+                        <a href="/" title = "SEREP"><img src={require('./LOGO2.png')} style={{height:"6vw"}} alt="Homeaway Logo"/></a>
+                    </Navbar.Brand> 
+                </Navbar.Header>
                     <div>
                         {(cookie.load('cookie1') === 'travellercookie') 
                         ?

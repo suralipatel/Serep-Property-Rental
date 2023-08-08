@@ -9,10 +9,10 @@
 }
 
 .container-pad {
-    padding: 30px 15px;
-    margin-left : 20px;
-    margin-right: 0px;
-    width : 1600px;
+    box-sizing: border-box;
+    /* margin-left : 20px; */
+    /* margin-right: 0px; */
+    width : 100vw;
 }
 
 .form-row.myformrow{
@@ -23,7 +23,7 @@
 }
 
 .bgc-fff {
-    background-color: rgb(138, 181, 245)!important;
+    background-color: rgb(190, 210, 240)!important;
 }
 .box-shad {
     -webkit-box-shadow: 1px 1px 0 rgba(0,0,0,.2);
@@ -103,12 +103,12 @@
     padding:0px;
     width : 500px;
     height : 50px;
-    background-color: white;
+    /* background-color: white; */
     color :black;
     font-size: 20px;
     font-weight: 450;
     /* font-family: Lato,Arial,Helvetica Neue,sans-serif; */
-    background-color: rgb(138, 181, 245)!important;
+    /* background-color: rgb(138, 181, 245)!important; */
     margin-left: 2vw;
 }
 
@@ -118,12 +118,12 @@
     padding:0px;
     width : 780px;
     height : 50px;
-    background-color: white;
+    /* background-color: white; */
     color :black;
     font-size: 15px;
     font-weight: 450;
     /* font-family: Lato,Arial,Helvetica Neue,sans-serif; */
-    background-color: rgb(138, 181, 245)!important;
+    /* background-color: rgb(138, 181, 245)!important; */
     margin-left: 2vw;
 }
 
@@ -132,11 +132,11 @@
     border: none;
     padding:0px;
     width : 20px;
-    background-color: white;
+    /* background-color: white; */
     font-size: 15px;
     color :black;
     /* font-family: Lato,Arial,Helvetica Neue,sans-serif; */
-    background-color: rgb(138, 181, 245)!important;
+    /* background-color: rgb(138, 181, 245)!important; */
     
 }
 
@@ -145,11 +145,11 @@
     border: none;
     padding:0px;
     width : 100px;
-    background-color: white;
+    /* background-color: white; */
     font-size: 15px;
     color :black;
     /* font-family: Lato,Arial,Helvetica Neue,sans-serif; */
-    background-color: rgb(138, 181, 245)!important;
+    /* background-color: rgb(138, 181, 245)!important; */
 }
 
 #mybathroom{
@@ -157,11 +157,11 @@
     border: none;
     padding:0px;
     width : 20px;
-    background-color: white;
+    /* background-color: white; */
     font-size: 15px;
     color :black;
     /* font-family: Lato,Arial,Helvetica Neue,sans-serif; */
-    background-color: rgb(138, 181, 245)!important;
+    /* background-color: rgb(138, 181, 245)!important; */
 }
 
 #mysleep{
@@ -169,11 +169,11 @@
     border: none;
     padding:0px;
     width : 60px;
-    background-color: white;
+    /* background-color: white; */
     font-size: 15px;
     color :black;
     /* font-family: Lato,Arial,Helvetica Neue,sans-serif; */
-    background-color: rgb(138, 181, 245)!important;
+    /* background-color: rgb(138, 181, 245)!important; */
 }
 
 #mysymbol{
@@ -181,11 +181,11 @@
     border: none;
     padding:0px;
     width : 5px;
-    background-color: white;
+    /* background-color: white; */
     font-size: 15px;
     color :black;
     /* font-family: Lato,Arial,Helvetica Neue,sans-serif; */
-    background-color: rgb(138, 181, 245)!important;
+    /* background-color: rgb(138, 181, 245)!important; */
 }
 
 #myaddress{
@@ -194,11 +194,11 @@
     padding:0px;
     width : 690px;
     height : 50px;
-    background-color: white;
+    /* background-color: white; */
     font-size: 15px;
     color :black;
     /* font-family: Lato,Arial,Helvetica Neue,sans-serif; */
-    background-color: rgb(138, 181, 245)!important;
+    /* background-color: rgb(138, 181, 245)!important; */
 }
 
 #mycity{
@@ -206,11 +206,11 @@
     border: none;
     padding:0px;
     width : 150px;
-    background-color: white;
+    /* background-color: white; */
     font-size: 15px;
     color :black;
     /* font-family: Lato,Arial,Helvetica Neue,sans-serif; */
-    background-color: rgb(138, 181, 245)!important;
+    /* background-color: rgb(138, 181, 245)!important; */
 }
 
 #mystate{
@@ -218,11 +218,11 @@
     border: none;
     padding:0px;
     width : 150px;
-    background-color: white;
+    /* background-color: white; */
     font-size: 15px;
     color :black;
     /* font-family: Lato,Arial,Helvetica Neue,sans-serif; */
-    background-color: rgb(138, 181, 245)!important;
+    /* background-color: rgb(169, 197, 237)!important; */
 }
 
 #mycountry{
@@ -230,11 +230,11 @@
     border: none;
     padding:0px;
     width : 150px;
-    background-color: white;
+    /* background-color: white; */
     font-size: 15px;
     color :black;
     /* font-family: Lato,Arial,Helvetica Neue,sans-serif; */
-    background-color: rgb(138, 181, 245)!important;
+    /* background-color: rgb(138, 181, 245)!important; */
 }
 
 .Hitinfo {
@@ -276,4 +276,46 @@
     text-align: left;
     background-color: #4CAF50;
     color: white;
+}
+
+.owner-property{
+    position: relative;
+    box-sizing: border-box;
+    padding: 2vw;
+    width: 100%;
+    overflow: hidden;
+    /* background-color: pink; */
+
+}
+
+.property-listing{
+    width: 100%;
+}
+
+.media{
+    width: 100%;
+    /* background-color: #4CAF50; */
+}
+
+.media-body {
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.media img{
+    width: 30%;
+    margin: 2%;
+}
+
+.media-body h4{
+    font-size: 2.5vw;
+}
+
+.media-body h6{
+    font-size: 1.2vw;
+}
+
+.pin-drop{
+    height: 3vw;
+    width: auto !important;
 }

@@ -11,7 +11,7 @@ var testInput_password = "test";
 var propertyid = 43;
 var bookingid = 10;
 
-describe('HomeAway Test Cases:', () => {
+describe('SEREP Test Cases:', () => {
 
     // Get Property details
     it("Test Case 1 - Details of an existing property Get", (done) => {

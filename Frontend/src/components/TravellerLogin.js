@@ -103,9 +103,9 @@ class TravellerLogin extends Component{
             <div>
                 {redirectVar}
                 <Navbar>
-                    <Navbar.Header>
+                    <Navbar.Header style={{height:"8vw"}}>
                         <Navbar.Brand>
-                            <a href="/" title = "HomeAway" className = "logo"><img src={require('./LOGO2.png')} className="navbar-logo" alt="Homeaway Logo"/></a>
+                            <a href="/" title = "SEREP"><img src={require('./LOGO2.png')} style={{height:"6vw"}} alt="Homeaway Logo"/></a>
                         </Navbar.Brand> 
                     </Navbar.Header>
                     <img src={require('./logo.png')} alt="Homeaway Logo"/>
@@ -130,7 +130,7 @@ class TravellerLogin extends Component{
                 </div>
                 <div class="center">
                     <div id="yourdiv">
-                        <h1 class="display-5">Log in to HomeAway</h1>
+                        <h1 class="display-5">Log in to SEREP</h1>
                         <h2><small>Need an account? <a class="bg-default" href="/traveller/signup1">Sign Up</a></small></h2>
                     </div>
                 </div>
@@ -173,7 +173,7 @@ class TravellerLogin extends Component{
                 </div>
                 <br></br>
                 <div class="center" id= "yourdiv">
-                    <font size="1">Use of this Web site constitutes acceptance of the HomeAway.com Terms and Conditions and Privacy Policy.
+                    <font size="1">Use of this Web site constitutes acceptance of the SEREP.com Terms and Conditions and Privacy Policy.
                         <br></br>
                         ©2018 SEREP. All rights reserved.</font>
                 </div>

@@ -144,7 +144,8 @@ class Home extends Component {
       redirectVar = <Redirect to = "/"/>
     }
     return(
-      <div style={{height:"100vh", width:"100vw", objectFit:"cover",opacity:"0.7", backgroundImage: this.state.backgroundImage}}>
+      <div style={{height:"100vh", width:"100vw", objectFit:"cover", backgroundImage: this.state.backgroundImage, backgroundSize:"100vw 100vh"}}>
+        {/* <div style={{position:'absolute',width:'100%',height:'100%',background:'black',left:'0',top:'0',zIndex:'0'}}></div> */}
       {redirectVar}
         <Navbar style = {{backgroundColor: "transparent", background: "transparent", borderColor: "transparent"}}>
           <Navbar.Header>
@@ -185,11 +186,12 @@ class Home extends Component {
               <img src={require('./logo.png')} alt=""/>
           </div>
           </Navbar>
-          <div className = "container">
+          
+          <div className = "container" style={{background:'#00000060'}}>
             <div className="jumbotron jumbotron-fluid" style = {{background: "none"}}>
               <div className="container" style = {{marginTop :"2%"}}>
-                  <h1 style ={{color: "#011f4b", fontFamily: "'Merriweather', serif",fontWeight:"600"}}>Rent villas, houses, apartments,</h1>
-                  <h1 style ={{color: "#011f4b", fontFamily: "'Merriweather', serif",paddingBottom:"2vw",fontWeight:"600"}}>Holiday homes and more, worldwide</h1>
+                  <h1 style ={{color: "#ffffff", fontFamily: "'Merriweather', serif",fontWeight:"600"}}>Rent villas, houses, apartments,</h1>
+                  <h1 style ={{color: "#ffffff", fontFamily: "'Merriweather', serif",paddingBottom:"2vw",fontWeight:"600"}}>Holiday homes and more, worldwide</h1>
                   <div className="row">
                     <div className="col-md-4 col-md-offset-3">
                       <div className="form-group">

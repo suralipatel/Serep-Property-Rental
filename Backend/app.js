@@ -56,5 +56,5 @@ app.use('/uploads', express.static(path.join(__dirname, '/uploads/')));
 
 // Execute App
 app.listen(port, () => {
-  console.log('HomeAway Backend running on Port: ',port);
+  console.log('SEREP Backend running on Port: ',port);
 });

@@ -12,7 +12,6 @@
   body {
     padding: 4em;
     background: #e5e5e5;
-    font: 13px/1.4 Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   }
   label {
     display: block;
@@ -31,16 +30,16 @@
     width: 20%;
   }
   .card-header{
-    color: rgb(158, 117, 12);
-    background: rgb(228, 203, 41);
+    color: 	#011f4b;
+    background: 	#005b96;
   }
 
   .card-body{
-    background: rgba(250, 224, 66, .2);
-    border-bottom: 1px solid rgba(250, 224, 66, .45);
+    background: #b2cddf;
+    border-bottom: 1px solid rgba(31, 10, 106, 0.45);
   }
 
   .card-link{
-    color: #A77B0E;
+    color: #dddddd;
     font-size: 25px;
   }

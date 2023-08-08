@@ -104,9 +104,9 @@ class OwnerLogin extends Component{
             <div>
                 {redirectVar}
                 <Navbar>
-                    <Navbar.Header>
-                        <Navbar.Brand className="logo">
-                            <a href="/" title = "HomeAway" className = "logo"><img src={require('./LOGO2.png')} className="navbar-logo" alt="Homeaway Logo"/></a>
+                    <Navbar.Header style={{height:"8vw"}}>
+                        <Navbar.Brand>
+                            <a href="/" title = "SEREP"><img src={require('./LOGO2.png')} style={{height:"6vw"}} alt="Homeaway Logo"/></a>
                         </Navbar.Brand> 
                     </Navbar.Header>
                     <img src={require('./logo.png')} alt="Homeaway Logo"/>
@@ -174,9 +174,9 @@ class OwnerLogin extends Component{
                 </div>
                 <br></br>
                 <div class="center" id= "yourdiv">
-                    <font size="1">Use of this Web site constitutes acceptance of the HomeAway.com Terms and Conditions and Privacy Policy.
+                    <font size="1">Use of this Web site constitutes acceptance of the SEREP.com Terms and Conditions and Privacy Policy.
                         <br></br>
-                        ©2018 HomeAway. All rights reserved.</font>
+                        ©2018 SEREP. All rights reserved.</font>
                 </div>
             </div>
         )

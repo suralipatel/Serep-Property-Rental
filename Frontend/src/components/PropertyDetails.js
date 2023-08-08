@@ -210,11 +210,11 @@ class PropertyDetails extends Component {
                 <Navbar>
                 <Navbar.Header>
                     <Navbar.Brand>
-                    <a href="/" title = "HomeAway" className = "logo"><img src={require('./LOGO2.png')} className="navbar-logo" alt=""/></a>
+                    <a href="/" title = "SEREP" className = "logo"><img src={require('./LOGO2.png')} className="navbar-logo" alt=""/></a>
                     </Navbar.Brand>
                 </Navbar.Header>
                 <div>
-                    <img alt="US Flag" src={require('./us_flag.png')}/>
+                    <img alt="US Flag" style={{height:"2vw"}} src={require('./us_flag.png')}/>
                     <button id="blue" className="btn" style = {{fontColor : "black", backgroundColor:"white", background:"white", borderColor:"white"}} type="button"><a href="#">Trip Boards</a></button>
                     {!this.state.isTravelerLoggedIn 
                     ?

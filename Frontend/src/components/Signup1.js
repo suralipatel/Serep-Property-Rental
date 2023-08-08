@@ -17,16 +17,16 @@ class Signup1 extends Component{
         return(
             <div>
                 {redirectVar}
-                <div>
+                {/* <div>
                     <img src={require("./signup_bg.jpg")}></img>
-                </div>
+                </div> */}
                 <Navbar>
                     <Navbar.Header>
                         <Navbar.Brand>
                             <a href="/" title = "SEREP" className = "logo"><img src={require('./LOGO2.png')} className="navbar-logo" alt=""/></a>
                         </Navbar.Brand> 
                     </Navbar.Header>
-                    <img src={require('./LOGO2.png')} className="navbar-logo" alt=""/>
+                    <img src={require('./logo.png')} className="navbar-logo" alt=""/>
                 </Navbar>  
                 <div class="container">
                 <p></p>
@@ -48,7 +48,7 @@ class Signup1 extends Component{
                 </div>
                 <div class="center">
                     <div id="yourdiv">
-                        <h1 class="display-5">Sign Up for HomeAway<br></br></h1>
+                        <h1 class="display-5">Sign Up for SEREP<br></br></h1>
                         <h2><small>	Already have an account? <a class="bg-default" href="/traveller/login">Log in</a></small>	</h2>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ class Signup1 extends Component{
                 </div>
                 <br></br>
                 <div class="center" id= "yourdiv">
-                <font size="1">Use of this Web site constitutes acceptance of the HomeAway.com Terms and Conditions and Privacy Policy.
+                <font size="1">Use of this Web site constitutes acceptance of the SEREP.com Terms and Conditions and Privacy Policy.
                     <br></br>
                     ©2018 SEREP. All rights reserved.</font>
                 </div>
